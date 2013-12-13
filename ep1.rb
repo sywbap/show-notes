@@ -133,6 +133,95 @@ Functions
     multiply(3.141592653589793, exponent(r, 2))
   end
 
-  def count_word_occurence str
+  def length_of_word word
     count = 0
-    str.
+    word.chars.each { count = count + 1 }
+    count
+  end
+
+  def longer_word word1, word2
+    if (length_of_word word1) > (length_of_word word2)
+      return word1
+    else
+      return word2
+    end
+  end
+
+Expressions
+  syntax that is evaluated to produce a value,
+  similar to mathemetical expression
+  
+  #literal values
+  
+  1024
+  => 1024
+
+  3 + 3
+  => 6
+  
+  "hello"
+  => "hello"
+
+  15 > 12
+  => false
+
+  #function calls that return values are also expressions
+
+  longer_word "hello", "goodbye"
+  => "goodbye"
+
+  (area_of_circle 5) / 2
+
+
+Statements
+  smallest standalone element of a language
+  a = 3
+  b = 9 * 6
+
+  #some languages require syntax to mark the end of statements
+  #but they are typically optional in ruby...
+  
+  a  = 3;
+  b  = 9 * 6;
+  
+  45;
+  
+  5 + 11;
+  
+  name = "speakingcode";
+  greeting = "hello, " + name;
+
+Cpompound Statements
+  may contain substatements and multiple components
+
+  Loops
+  repeat until a certain condition changes
+
+  while (x < 1000) do
+    current_job = jobs[x]
+    current_job.start
+    x = x + 1
+  end
+
+  for i in (0..100) do
+    current_job = jobs[i]
+    current_job.start
+  end
+
+  If Statements
+
+  if age < 18
+    puts "You are too young!"
+  end
+
+  if (speed == 0)
+    puts "You're not moving!"
+  elsif speed < 30
+    puts "Speed up a little bit."
+  else
+    if speed_limit < speed
+      puts "Slow down, you're speeding!"
+    else
+      puts "Alright, now we're cruising!"
+    end
+  end
