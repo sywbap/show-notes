@@ -114,13 +114,13 @@ Functions
 
 
   chop "word"
-  =>wor
+  => "wor"
 
   def multiply a, b
     a * b
   end
 
-  multipy 23, 10
+  multiply 23, 10
   => 2300
 
   def exponent a, b
@@ -205,10 +205,20 @@ Compound Statements
     x = x + 1
   end
 
+  #for-loops in ruby look slightly different than typical
+  #syntax found in other langauges
+
   for i in (0..100) do
     current_job = jobs[i]
     current_job.start
   end
+
+  #javascript
+  for(var i = 0; i <= 100; i++)
+  {
+    var current_job = jobs[x];
+    current_job.start();
+  }
 
   If Statements
 
