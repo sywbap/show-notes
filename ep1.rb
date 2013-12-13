@@ -38,6 +38,11 @@ Variables
   => "programmer"
 
 Types
+
+  determine the possible values, valid operations,
+  and meaning for pieces of data and how it is stored
+  by the computer
+  
   
   Numbers (integers, floats)
 
@@ -46,7 +51,7 @@ Types
 
   gross + 84370.82
   => 142749.89
-
+,
   num_of_units - 13
   => 32
 
@@ -57,7 +62,7 @@ Types
   => true
 
   Strings
-  
+   
   name = "John Doe"
   description = "No one really knows who he is, do they?"
 
@@ -118,9 +123,16 @@ Functions
   multipy 23, 10
   => 2300
 
-  
+  def exponent a, b
+    ans = 1
+    b.times { ans = multiply(ans, a) }
+    return ans
+  end
+                                                                                      
+  def area_of_circle r
+    multiply(3.141592653589793, exponent(r, 2))
+  end
 
-
-
-
-    
+  def count_word_occurence str
+    count = 0
+    str.
