@@ -147,6 +147,8 @@ Functions
     end
   end
 
+
+
 Expressions
   syntax that is evaluated to produce a value,
   similar to mathemetical expression
@@ -191,7 +193,7 @@ Statements
   name = "speakingcode";
   greeting = "hello, " + name;
 
-Cpompound Statements
+Compound Statements
   may contain substatements and multiple components
 
   Loops
